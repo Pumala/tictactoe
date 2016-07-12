@@ -51,7 +51,7 @@ body {
 
 .container {
     margin: 0 auto;
-    padding: 50px 5%;
+    padding: 25px 5%;
 }
 
 h1 {
@@ -106,8 +106,9 @@ td {
     font-size: 1.25em;
     border-radius: 5px;
     border: none;
-    padding: 7px 15px;
+    padding: 8px 16px;
     outline: none;
+    margin-top: .75em;
 }
 
 #resetBtn, td {
@@ -122,10 +123,11 @@ td {
 @media screen and (min-width: 500px) {
     .container {
         width: 430px;
-        padding: 2.5em;
+        padding: 2em;
     }
     h1 {
     font-size: 3.25em;
+    padding: .25em;
     }
     #message {
         font-size: 2em;
