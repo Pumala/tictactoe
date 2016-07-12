@@ -1,0 +1,143 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*****************
+** End of Reset **
+*****************/
+
+body, button {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: url("images/stardust.png");
+    text-align: center;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 50px 5%;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: magenta;
+    padding: .5em 0;
+}
+
+h3 {
+    color: red;
+}
+
+#message {
+    font-size: 1.35em;
+    float: left;
+    width: 100%;
+}
+
+table {
+    height: 275px;
+    width: 100%;
+    margin: 2.5em 0 1.75em 0;
+}
+
+td {
+    width: 91px;
+    height: 100px;
+    line-height: 1.35;
+    font-size: 4em;
+}
+
+.bottom {
+    border-bottom: 2px solid yellow;
+}
+
+.bothSides {
+    border-left: 2px solid yellow;
+    border-right: 2px solid yellow;
+}
+
+.x {
+    color: deeppink;
+}
+
+.o {
+    color: aqua;
+}
+
+#resetBtn {
+    background: magenta;
+    color: yellow;
+    font-size: 1.25em;
+    border-radius: 5px;
+    border: none;
+    padding: 7px 15px;
+    outline: none;
+}
+
+#resetBtn, td {
+    cursor: pointer;
+}
+
+#resetBtn:hover {
+    background: yellow;
+    color: magenta;
+}
+
+@media screen and (min-width: 500px) {
+    .container {
+        width: 430px;
+        padding: 2.5em;
+    }
+    h1 {
+    font-size: 3.25em;
+    }
+    #message {
+        font-size: 2em;
+        margin-top: -17px;
+    }
+    td {
+        font-size: 5em;
+        line-height: 1.6;
+        height: 141px;
+    }
+    #resetBtn {
+        font-size: 1.75em;
+        padding: 10px 20px;
+    }
+}
