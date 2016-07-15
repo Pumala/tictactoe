@@ -39,6 +39,22 @@ table {
 /*****************
 ** End of Reset **
 *****************/
+#options {
+    position: absolute;
+    background: aqua;
+    width: 90%;
+    font-size: 1em;
+}
+
+.select {
+    padding: 3%;
+    background: deeppink;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 1.25em auto;
+    display: inherit;
+}
 
 body, button {
     font-family: 'Montserrat', sans-serif;
@@ -49,13 +65,18 @@ body {
     text-align: center;
 }
 
+button {
+    border: none;
+    outline: none;
+}
+
 .container {
     margin: 0 auto;
-    padding: 50px 5%;
+    padding: 1em 5%;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.75em;
     color: magenta;
     padding: .5em 0;
 }
@@ -105,16 +126,14 @@ td {
     color: yellow;
     font-size: 1.25em;
     border-radius: 5px;
-    border: none;
     padding: 7px 15px;
-    outline: none;
 }
 
-#resetBtn, td {
+button, td {
     cursor: pointer;
 }
 
-#resetBtn:hover {
+#resetBtn:hover, button:hover {
     background: yellow;
     color: magenta;
 }
@@ -123,6 +142,10 @@ td {
     .container {
         width: 430px;
         padding: 2.5em;
+    }
+    #options {
+        width: 430px;
+        font-size: 1.25em;
     }
     h1 {
     font-size: 3.25em;
