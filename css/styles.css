@@ -39,6 +39,22 @@ table {
 /*****************
 ** End of Reset **
 *****************/
+#options {
+    position: absolute;
+    background: aqua;
+    width: 90%;
+    font-size: 1em;
+}
+
+.select {
+    padding: 3%;
+    background: deeppink;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 1.25em auto;
+    display: inherit;
+}
 
 body, button {
     font-family: 'Montserrat', sans-serif;
@@ -49,13 +65,18 @@ body {
     text-align: center;
 }
 
+button {
+    border: none;
+    outline: none;
+}
+
 .container {
     margin: 0 auto;
-    padding: 25px 5%;
+    padding: 1em 5%;
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 2.75em;
     color: magenta;
     padding: .5em 0;
 }
@@ -68,7 +89,6 @@ h3 {
     font-size: 1.35em;
     float: left;
     width: 100%;
-    margin-top: -.25em;
 }
 
 table {
@@ -106,17 +126,14 @@ td {
     color: yellow;
     font-size: 1.25em;
     border-radius: 5px;
-    border: none;
-    padding: 8px 16px;
-    outline: none;
-    margin-top: .75em;
+    padding: 7px 15px;
 }
 
-#resetBtn, td {
+button, td {
     cursor: pointer;
 }
 
-#resetBtn:hover {
+#resetBtn:hover, button:hover {
     background: yellow;
     color: magenta;
 }
@@ -124,14 +141,18 @@ td {
 @media screen and (min-width: 500px) {
     .container {
         width: 430px;
-        padding: 2em;
+        padding: 2.5em;
+    }
+    #options {
+        width: 430px;
+        font-size: 1.25em;
     }
     h1 {
     font-size: 3.25em;
-    padding: .25em;
     }
     #message {
         font-size: 2em;
+        margin-top: -17px;
     }
     td {
         font-size: 5em;
